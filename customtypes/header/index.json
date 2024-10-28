@@ -27,13 +27,10 @@
               }
             },
             "nav_link": {
-              "type": "Link",
+              "type": "Text",
               "config": {
                 "label": "Nav Link",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "select": null,
-                "allowText": true
+                "placeholder": ""
               }
             }
           }

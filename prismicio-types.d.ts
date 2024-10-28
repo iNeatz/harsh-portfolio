@@ -21,12 +21,12 @@ export interface HeaderDocumentDataNavigationItem {
   /**
    * Nav Link field in *Header → Navigation*
    *
-   * - **Field Type**: Link
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
    * - **API ID Path**: header.navigation[].nav_link
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  nav_link: prismic.LinkField;
+  nav_link: prismic.KeyTextField;
 }
 
 /**

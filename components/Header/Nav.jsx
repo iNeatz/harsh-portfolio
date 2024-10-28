@@ -1,6 +1,6 @@
 "use client";
 
-import { PrismicNextLink } from "@prismicio/next";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Nav = ({ settings }) => {
@@ -9,13 +9,13 @@ const Nav = ({ settings }) => {
   return (
     <nav className="flex gap-8">
       {settings.data.navigation.map((item) => (
-        <PrismicNextLink
-          field={item.nav_link}
+        <Link
+          href={item.nav_link}
           key={item.nav_title}
-          className={`${item.nav_link.url === pathname && "text-accent border-accent border-b-2"} hover:text-accent font-medium capitalize transition-all`}
+          className={`${item.nav_link === pathname && "border-b-2 border-accent text-accent"} font-medium capitalize transition-all hover:text-accent`}
         >
           {item.nav_title}
-        </PrismicNextLink>
+        </Link>
       ))}
     </nav>
   );

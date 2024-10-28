@@ -27,13 +27,13 @@ const MobileNav = ({ settings }) => {
 
         <nav className="flex flex-col items-center justify-center gap-8">
           {navLinks.map((link, index) => (
-            <PrismicNextLink
-              field={link.nav_link}
+            <Link
+              href={link.nav_link}
               key={`${index}-${link.nav_title}`}
-              className={`${link.nav_link.url === pathname && "border-b-2 border-accent text-accent"}  text-xl capitalize transition-all hover:text-accent`}
+              className={`${link.nav_link === pathname && "border-b-2 border-accent text-accent"}  text-xl capitalize transition-all hover:text-accent`}
             >
               {link.nav_title}
-            </PrismicNextLink>
+            </Link>
           ))}
         </nav>
       </SheetContent>
