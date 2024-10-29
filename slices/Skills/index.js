@@ -8,7 +8,9 @@ import {
   SiHtml5,
   SiJavascript,
   SiKotlin,
+  SiLaravel,
   SiMongodb,
+  SiMysql,
   SiNextdotjs,
   SiNodedotjs,
   SiPhp,
@@ -53,6 +55,8 @@ const skillList = {
   git: <SiGit />,
   flutter: <SiFlutter />,
   sass: <FaSass />,
+  sql: <SiMysql />,
+  laravel: <SiLaravel />,
 };
 
 const Skills = ({ slice }) => {
